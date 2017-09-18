@@ -12,7 +12,6 @@ class SignUpLoginVc: UIViewController {
     
     // outlets
     @IBOutlet weak var nameTextField: UITextField!
-   
     @IBOutlet weak var passwordTextField: UITextField!
    
     

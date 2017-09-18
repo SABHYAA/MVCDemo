@@ -20,5 +20,9 @@ class Person {
         print(password)
     }
     
+    init(json : JSON) {
+        self.username = json["form"]["UserName"].string ?? ""
+        self.password =  json["form"]["Password"].string ?? ""
+    }
     
 }

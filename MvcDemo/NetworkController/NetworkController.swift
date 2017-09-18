@@ -28,17 +28,17 @@ func getSignIn(username: String, password: String, url: String) {
         }
         else {
             
-            let json = JSON(data!)
+        let json = JSON(data!)
+            print(json)
             
+//           let _ = Person(username: json["form"]["UserName"].string ?? "", password: json["form"]["Password"].string ?? "")
+////            Person.init(username: , password: )
             
-            Person.init(username: json["form"]["UserName"].string!, password: json["form"]["Password"].string!)
+             let data = Person(json: json)
             
-            
+         
             
         }
-        //    let httpResponse = response as! HTTPURLResponse
-        //    print("My HTTP Response is = = = \(httpResponse)")
-        
         
     }).resume()
     
